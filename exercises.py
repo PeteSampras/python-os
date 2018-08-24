@@ -1,7 +1,8 @@
+import os
 #1. Open the filenames.txt file with read-only access with the open() function
-
+my_file=open('filenames.txt','r')
 #2. Print the name of the file and if it is open or closed using the .name and .closed properties
-
+print(f'File {my_file.name} is {my_file.closed}')
 #3. Use a for loop to read all lines of filenames.txt into a list variable
 
 #4. Print out all the lines from the file from your variable

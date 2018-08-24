@@ -2,13 +2,16 @@ import os
 #1. Open the filenames.txt file with read-only access with the open() function
 my_file=open('filenames.txt','r')
 #2. Print the name of the file and if it is open or closed using the .name and .closed properties
-print(f'File {my_file.name} is {my_file.closed}')
+print(f'File {my_file.name} is closed: {my_file.closed}')
 #3. Use a for loop to read all lines of filenames.txt into a list variable
-
+my_list = []
+for line in my_file:
+    my_list.append(line)
 #4. Print out all the lines from the file from your variable
-
+for each in my_list:
+    print(each)
 #5. Close the filenames.txt file and print if the file is open or closed
-
+my_file.close()
 #6. Create a file using the open() function called secrets.txt
 
 #7. Write your own secrets to the file with the write() function
